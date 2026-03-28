@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cebu Clean | Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Cebu Clean Home">
+        <svg class="leaf-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+          <path d="M87 10C57 23 38 42 26 61c-8 12-9 24-6 29 8 13 32 12 50-1 17-12 28-33 23-79z"></path>
+          <path d="M77 29C47 40 31 55 18 76" stroke="#1f6d2d" stroke-width="5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        Cebu Clean
+      </a>
+      <button class="menu-toggle" data-menu-button aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="site-nav" id="main-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="seminar.html">Seminar</a>
+        <a href="impact.html">Impact</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-head">
+      <h1 class="section-title text-success">Our Impact</h1>
+      <p class="section-subtitle">Real-time data showing the difference we're making together</p>
+    </section>
+
+    <section class="section stack">
+      <div class="feature-grid four-col">
+        <article class="feature-card metric-card center">
+          <div class="feature-icon" aria-hidden="true">👥</div>
+          <h3>Total volunteers</h3>
+          <p class="metric-value">2,659</p>
+          <small>+369 month</small>
+        </article>
+        <article class="feature-card metric-card center">
+          <div class="feature-icon" aria-hidden="true">🗑️</div>
+          <h3>Waste collected</h3>
+          <p class="metric-value">142.5 tons</p>
+          <small>18.6 + tons this month</small>
+        </article>
+        <article class="feature-card metric-card center">
+          <div class="feature-icon" aria-hidden="true">₱</div>
+          <h3>Donation Recieved</h3>
+          <p class="metric-value">P1.2M</p>
+          <small>180k + this month</small>
+        </article>
+        <article class="feature-card metric-card center">
+          <div class="feature-icon" aria-hidden="true">🗓️</div>
+          <h3>Active Events</h3>
+          <p class="metric-value">24</p>
+          <small>8 Upcoming Events</small>
+        </article>
+      </div>
+
+      <div class="chart-grid">
+        <article class="card chart-card">
+          <h2>Waste Collected (Tons)</h2>
+          <div class="bars" aria-hidden="true">
+            <div class="bar" style="--h: 40%;"><span>Jan</span></div>
+            <div class="bar" style="--h: 47%;"><span>Feb</span></div>
+            <div class="bar" style="--h: 58%;"><span>Mar</span></div>
+            <div class="bar" style="--h: 68%;"><span>Apr</span></div>
+            <div class="bar" style="--h: 75%;"><span>May</span></div>
+            <div class="bar" style="--h: 80%;"><span>Jun</span></div>
+          </div>
+        </article>
+
+        <article class="card chart-card">
+          <h2>Volunteer Growth</h2>
+          <div class="bars" aria-hidden="true">
+            <div class="bar" style="--h: 63%;"><span>Jan</span></div>
+            <div class="bar" style="--h: 72%;"><span>Feb</span></div>
+            <div class="bar" style="--h: 79%;"><span>Mar</span></div>
+            <div class="bar" style="--h: 83%;"><span>Apr</span></div>
+            <div class="bar" style="--h: 87%;"><span>May</span></div>
+            <div class="bar" style="--h: 89%;"><span>Jun</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Dashboard updates monthly performance and participation trends.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

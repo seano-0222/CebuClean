@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cebu Clean | Seminar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Cebu Clean Home">
+        <svg class="leaf-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+          <path d="M87 10C57 23 38 42 26 61c-8 12-9 24-6 29 8 13 32 12 50-1 17-12 28-33 23-79z"></path>
+          <path d="M77 29C47 40 31 55 18 76" stroke="#1f6d2d" stroke-width="5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        Cebu Clean
+      </a>
+      <button class="menu-toggle" data-menu-button aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="site-nav" id="main-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a class="active" href="seminar.html">Seminar</a>
+        <a href="impact.html">Impact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="seminar-head">
+      <div class="seminar-head-icon" aria-hidden="true">🗓️</div>
+      <h1>Upcoming Seminar</h1>
+      <p>Join our educational sessions and learn how to make a difference</p>
+    </section>
+
+    <section class="section seminar-section">
+      <button class="filter-btn" type="button">Show filters</button>
+
+      <div class="seminar-grid">
+        <article class="seminar-card bento-wide">
+          <h3>Waste Management 101</h3>
+          <div class="seminar-meta">
+            <p><span aria-hidden="true">🗓️</span> March 20, 2026</p>
+            <p><span aria-hidden="true">🕒</span> 2:00 PM</p>
+            <p><span aria-hidden="true">📍</span> Barangay Lahug Community Center</p>
+            <p><span aria-hidden="true">👥</span> 45 seats available</p>
+          </div>
+          <button class="register-pill" type="button" data-open-registry data-seminar="Waste Management 101" data-schedule="March 20, 2026 - 2:00 PM">Register</button>
+        </article>
+
+        <article class="seminar-card">
+          <h3>Composting for Beginners</h3>
+          <div class="seminar-meta">
+            <p><span aria-hidden="true">🗓️</span> March 22, 2026</p>
+            <p><span aria-hidden="true">🕒</span> 10:00 AM</p>
+            <p><span aria-hidden="true">📍</span> Barangay Guadalupe Hall</p>
+            <p><span aria-hidden="true">👥</span> 30 seats available</p>
+          </div>
+          <button class="register-pill" type="button" data-open-registry data-seminar="Composting for Beginners" data-schedule="March 22, 2026 - 10:00 AM">Register</button>
+        </article>
+
+        <article class="seminar-card bento-tall">
+          <h3>Waste Management 101</h3>
+          <div class="seminar-meta">
+            <p><span aria-hidden="true">🗓️</span> March 25, 2026</p>
+            <p><span aria-hidden="true">🕒</span> 3:00 PM</p>
+            <p><span aria-hidden="true">📍</span> Cebu City Hall</p>
+            <p><span aria-hidden="true">👥</span> 100 seats available</p>
+          </div>
+          <button class="register-pill" type="button" data-open-registry data-seminar="Waste Management 101" data-schedule="March 25, 2026 - 3:00 PM">Register</button>
+        </article>
+
+        <article class="seminar-card bento-wide">
+          <h3>Waste Management 101</h3>
+          <div class="seminar-meta">
+            <p><span aria-hidden="true">🗓️</span> March 28, 2026</p>
+            <p><span aria-hidden="true">🕒</span> 1:00 PM</p>
+            <p><span aria-hidden="true">📍</span> Barangay Talamban Center</p>
+            <p><span aria-hidden="true">👥</span> 25 seats available</p>
+          </div>
+          <button class="register-pill" type="button" data-open-registry data-seminar="Waste Management 101" data-schedule="March 28, 2026 - 1:00 PM">Register</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="seminar-registry-modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="seminar-registry-title">
+      <button class="modal-close" type="button" data-close-registry aria-label="Close">×</button>
+      <h2 id="seminar-registry-title">Seminar Registry</h2>
+      <form id="seminar-registry-form" class="stack">
+        <div class="field">
+          <label for="sem-reg-seminar">Seminar</label>
+          <input id="sem-reg-seminar" readonly>
+        </div>
+        <div class="field">
+          <label for="sem-reg-name">Full name</label>
+          <input id="sem-reg-name" required placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="sem-reg-email">Email</label>
+          <input id="sem-reg-email" type="email" required placeholder="you@example.com">
+        </div>
+        <button class="btn btn-primary" type="submit">Confirm seminar registration</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">Seminar partner schools and NGOs receive dedicated toolkits.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

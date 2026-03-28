@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cebu Clean | Volunteer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Cebu Clean Home">
+        <svg class="leaf-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+          <path d="M87 10C57 23 38 42 26 61c-8 12-9 24-6 29 8 13 32 12 50-1 17-12 28-33 23-79z"></path>
+          <path d="M77 29C47 40 31 55 18 76" stroke="#1f6d2d" stroke-width="5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        Cebu Clean
+      </a>
+      <button class="menu-toggle" data-menu-button aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="site-nav" id="main-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a class="active" href="volunteer.html">Volunteer</a>
+        <a href="seminar.html">Seminar</a>
+        <a href="impact.html">Impact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transparency.html">Transparency</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1 class="page-title">Become a Volunteer</h1>
+      <p class="page-intro">From beach sweeps to barangay sorting drives, every role helps keep Cebu cleaner and safer.</p>
+    </section>
+
+    <section class="section page-grid">
+      <article class="card">
+        <h2>Volunteer Registry</h2>
+        <form class="stack" id="volunteer-registry-form">
+          <div class="field">
+            <label for="vol-name">Full name</label>
+            <input id="vol-name" name="vol-name" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="vol-email">Email</label>
+            <input id="vol-email" name="vol-email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="vol-phone">Phone</label>
+            <input id="vol-phone" name="vol-phone" placeholder="09XXXXXXXXX" required>
+          </div>
+          <div class="field">
+            <label for="vol-area">Barangay / City</label>
+            <select id="vol-area" name="vol-area">
+              <option>North Cebu</option>
+              <option>Metro Cebu</option>
+              <option>South Cebu</option>
+              <option>Online support</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="vol-role">Role interest</label>
+            <select id="vol-role" name="vol-role">
+              <option>Cleanup crew</option>
+              <option>Data collection</option>
+              <option>Community educator</option>
+              <option>Donation drive support</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Register volunteer profile</button>
+        </form>
+      </article>
+
+      <article class="card stack">
+        <h2>What to expect</h2>
+        <div class="timeline">
+          <div class="timeline-item"><strong>Orientation:</strong> 45-minute onboarding and safety prep.</div>
+          <div class="timeline-item"><strong>Deployment:</strong> Choose weekly, bi-weekly, or monthly missions.</div>
+          <div class="timeline-item"><strong>Tracking:</strong> Hours and impact are credited to your profile.</div>
+          <div class="timeline-item"><strong>Growth:</strong> Access team-lead and seminar facilitator tracks.</div>
+        </div>
+        <a class="btn btn-secondary" href="seminar.html">Browse training seminars</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Volunteer support line: +63 32 000 2026</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

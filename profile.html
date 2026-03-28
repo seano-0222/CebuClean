@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cebu Clean | Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Cebu Clean Home">
+        <svg class="leaf-mini" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+          <path d="M87 10C57 23 38 42 26 61c-8 12-9 24-6 29 8 13 32 12 50-1 17-12 28-33 23-79z"></path>
+          <path d="M77 29C47 40 31 55 18 76" stroke="#1f6d2d" stroke-width="5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        Cebu Clean
+      </a>
+      <button class="menu-toggle" data-menu-button aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="site-nav" id="main-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="seminar.html">Seminar</a>
+        <a href="impact.html">Impact</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transparency.html">Transparency</a>
+        <a class="active" href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <h1 class="page-title">Volunteer Profile</h1>
+      <p class="page-intro">Track your personal impact, enrolled seminars, and upcoming mission assignments.</p>
+    </section>
+
+    <section class="section page-grid">
+      <article class="card stack">
+        <h2>Account details</h2>
+        <div class="field"><label for="profile-name">Name</label><input id="profile-name" value="" readonly></div>
+        <div class="field"><label for="profile-email">Email</label><input id="profile-email" value="" readonly></div>
+        <div class="field"><label for="profile-area">Barangay</label><input id="profile-area" value="" readonly></div>
+        <div class="field"><label for="profile-role">Primary role</label><input id="profile-role" value="" readonly></div>
+      </article>
+
+      <article class="card stack">
+        <h2>My impact snapshot</h2>
+        <div class="kpi-grid">
+          <div class="kpi"><h3>128</h3><p>Volunteer hours</p></div>
+          <div class="kpi"><h3>31</h3><p>Missions joined</p></div>
+          <div class="kpi"><h3>11</h3><p>Seminars completed</p></div>
+          <div class="kpi"><h3>214 kg</h3><p>Waste recovered</p></div>
+        </div>
+        <a class="btn btn-secondary" href="dashboard.html">View org dashboard</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Your profile data stays private and follows consent-based reporting rules.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
