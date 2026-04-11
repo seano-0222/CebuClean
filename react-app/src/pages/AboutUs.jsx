@@ -19,10 +19,8 @@ const timeline = [
 ]
 
 const team = [
-  { name: 'Maria Santos', role: 'Executive Director', initials: 'MS', color: '#3baa3a' },
-  { name: 'Carlo Reyes', role: 'Head of Programs', initials: 'CR', color: '#0a2d47' },
-  { name: 'Ana Villanueva', role: 'Finance & Transparency', initials: 'AV', color: '#6b21a8' },
-  { name: 'Ryan Uy', role: 'Volunteer Operations', initials: 'RU', color: '#c2410c' },
+  { name: 'Sean Marconi A. Tormes', role: 'Developer', initials: 'ST', color: '#3baa3a' },
+  { name: 'Karl Andrei B. Abriz', role: 'Developer', initials: 'KA', color: '#0a2d47' },
 ]
 
 export default function AboutUs() {
@@ -32,6 +30,7 @@ export default function AboutUs() {
       <div className="page-hero">
         <span className="badge" style={{ background: 'rgba(111,255,0,0.18)', color: '#a0ff5a', marginBottom: '1rem', display: 'inline-block' }}>
           Est. 2018 · Cebu City, Philippines
+
         </span>
         <h1>About CebuClean</h1>
         <p>A grassroots movement turned recognized NGO, driven by the belief that collective action creates lasting change.</p>
